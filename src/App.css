@@ -182,6 +182,7 @@
     border-right-color: var(--border);
   }
 }
+
 .App-header {
   display: flex;
   flex-direction: column;
@@ -190,7 +191,6 @@
   font-size: calc(10px + 2vmin);
   color: rgb(240, 6, 6);
   background-color: rgb(110, 165, 97);
-  border: 7background-color: #d50f0f;px solid rgb(249, 10, 237);
   box-shadow: 0 10px 30px 10px red;
   border-radius: 50px;
   padding: 40px;
@@ -204,4 +204,47 @@
   font-size: 2.5rem;
   color: #ec0707a2;
   padding: 10px;
+}
+.Navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #03c4f9;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: red;
+}
+.Navbar h2{
+  margin: 0;
+}
+.hero {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #03c4f9;
+}
+.hero-button{
+  margin-top: 40px;
+  padding: 10px 200px;
+  font-size: 1.2rem;
+  background-color: #03c4f9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
