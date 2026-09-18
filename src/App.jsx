@@ -15,10 +15,11 @@
 //   );
 // } 
 // export default App;
-
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
+import EventSection from "./Components/EventSection";
+import Footer from "./Components/footer";
 function App() {
   return (
     <div>
@@ -27,8 +28,9 @@ function App() {
         <h1>Welcome to Campus Connect</h1>
       </main>
       <Hero />
+      <EventSection />
+          <Footer />
     </div>
   );
 }
-
 export default App;
