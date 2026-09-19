@@ -1,7 +1,7 @@
 function Navbar() {
   return (
-    <nav className="Navbar">
-        <h2> Campus connect</h2>
+    <nav className="navbar">
+      <h2>Campus Connect</h2>
         <div className="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>  

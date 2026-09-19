@@ -1,13 +1,12 @@
 import EventCard from "./EventCard";
-import { initialEvents } from "../data/events";
 
-function EventSection() {
+function EventSection({ events }) {
   return (
     <section className="event-section">
       <h2>Upcoming Events</h2>
       <p>Join us for exciting events and activities!</p>
       <div className="event-grid">
-        {initialEvents.map((event) => (
+        {events.map((event) => (
           <EventCard key={event.id} {...event} />
         ))}
       </div>

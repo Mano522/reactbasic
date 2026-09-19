@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <footer id="About"className="footer">
-        <h1>We all welcome you ! we are happy to have u in ur community...pls contact us @ electonic city office</h1>
-      <p>&copy; 2024 My Website. All rights reserved.</p>
+    <footer id="about" className="footer">
+        <h1>Welcome to our campus community. Find your people, share your ideas, and make the most of every event.</h1>
+      <p>&copy; 2026 Campus Connect. All rights reserved.</p>
     </footer>
   );
 }
