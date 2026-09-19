@@ -15,22 +15,59 @@
 //   );
 // } 
 // export default App;
+// import "./App.css";
+// import Navbar from "./Components/Navbar";
+// import Hero from "./Components/Hero";
+// import EventSection from "./Components/EventSection";
+// import Footer from "./Components/footer";
+// function App() {
+//   return (
+//     <div>
+//       <Navbar />
+//       <main className="App">
+//         <h1>Welcome to Campus Connect</h1>
+//       </main>
+//       <Hero />
+//       <EventSection />
+//        <Footer />
+//     </div>
+//   );
+// }
+// export default App;
+import { useState } from "react";
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import EventSection from "./Components/EventSection";
-import Footer from "./Components/footer";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import EventForm from "./components/EventForm";
+import EventSection from "./components/EventSection";
+import Footer from "./components/Footer";
+import { initialEvents } from "./data/events";
+
 function App() {
+  const [events, setEvents] = useState(initialEvents);
+
+  function handleAddEvent(newEvent) {
+    setEvents([...events, newEvent]);
+  }
+
   return (
     <div>
       <Navbar />
-      <main className="App">
-        <h1>Welcome to Campus Connect</h1>
+
+      <main id="home">
+        <Hero
+          title="Discover What Is Happening on Campus"
+          description="Find workshops, sports activities, club meetings, and opportunities to connect with other students."
+        />
+
+       
+
+        <EventSection events={events} />
       </main>
-      <Hero />
-      <EventSection />
-          <Footer />
+ <EventForm onAddEvent={handleAddEvent} />
+      <Footer />
     </div>
   );
 }
+
 export default App;
